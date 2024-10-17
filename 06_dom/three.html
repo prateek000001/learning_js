@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript learning</title>
+</head>
+<body style="background-color:#212121;color:#ffff ;">
+
+</body>
+<script>
+ const div= document.createElement('div');
+ console.log(div);
+ div.className='main';
+ div.id=Math.random()*10+1;
+ div.setAttribute("title","generated title");
+//  div.innerText="chai or learning";
+const addText=document.createTextNode("chai or learning");
+div.appendChild(addText);
+document.body.appendChild(div);
+const div2=document.createElement('div');
+div2.className='child';
+div2.id="321";
+const addTextchild=document.createTextNode("i am child of class main")
+div2.appendChild(addTextchild);
+div.appendChild(div2);
+</script>
+</html>
